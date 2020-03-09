@@ -1,0 +1,30 @@
+{
+  "name": "apexlegends",
+  "version": "1.0.0",
+  "description": "This is Players tracking App. It can be used to track Xbox Live Players using gamer tags, Play Station ID.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toxic254/apexLegends.git"
+  },
+  "author": "Cyrus Gichuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toxic254/apexLegends/issues"
+  },
+  "homepage": "https://github.com/Toxic254/apexLegends#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
