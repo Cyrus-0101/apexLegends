@@ -12,6 +12,7 @@ const app = express();
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
+
 //Production Handling
 if (process.env.NODE_ENV === 'production') {
     //Set Static Folder
