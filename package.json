@@ -4,9 +4,10 @@
   "description": "This is Players tracking App. It can be used to track Xbox Live Players using gamer tags, Play Station ID.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
     "server": "node server.js",
-    "client": "npm run serve"
+    "client": "npm run serve --prefix client",
+    "start": "concurrently \"npm run dev\" \"npm run client\""
   },
   "repository": {
     "type": "git",
