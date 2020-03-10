@@ -12,6 +12,14 @@ const app = express();
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
+//Production Handling
+if (process.env.NODE_ENV === 'production') {
+    //Set Static Folder
+    app.use(express.static(__dirname + '/public/'));
+
+    //Handles Single Page Application(SPA)
+    app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
+}
 
 //Profile Routes
 app.use('/api/v1/profile', require('./routes/profile'));

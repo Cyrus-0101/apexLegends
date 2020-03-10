@@ -53,6 +53,7 @@
                     </ul>
                 </div>
             </div>
+            <router-link to="/">Go Back</router-link>
         </div>
     </section>
   
